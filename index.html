@@ -33,13 +33,6 @@
           </svg>
           <span>rRepoDocs</span>
         </button>
-        <button class="project-nav__item" type="button" data-panel="sharing">
-          <svg aria-hidden="true" viewBox="0 0 24 24">
-            <path d="M8 12h8M14 8l4 4-4 4" />
-            <path d="M5 5h6M5 19h6M19 5v14" />
-          </svg>
-          <span>Sharing</span>
-        </button>
         <button class="project-nav__item" type="button" data-panel="roadmap">
           <svg aria-hidden="true" viewBox="0 0 24 24">
             <path d="M5 6h14M5 12h14M5 18h14" />
@@ -51,7 +44,7 @@
     </header>
 
     <main>
-      <section class="panel is-active" id="overview" aria-labelledby="overview-title">
+      <section class="panel is-active" data-panel-id="overview" aria-labelledby="overview-title">
         <div class="hero-grid">
           <div class="hero-copy">
             <p class="eyebrow">Independent apps and developer tools</p>
@@ -91,7 +84,7 @@
             <article class="project-card">
               <div class="project-card__mark">rD</div>
               <div>
-                <h3>Shared previews</h3>
+                <h3>rRepoDocs sharing</h3>
                 <p>Public, read-only document snapshots that do not expose private repository access.</p>
               </div>
             </article>
@@ -106,7 +99,7 @@
         </div>
       </section>
 
-      <section class="panel" id="rrepodocs" aria-labelledby="rrepodocs-title">
+      <section class="panel" data-panel-id="rrepodocs" aria-labelledby="rrepodocs-title">
         <div class="product-layout">
           <div class="product-copy">
             <p class="eyebrow">Current app</p>
@@ -143,17 +136,18 @@
             </div>
           </div>
         </div>
-      </section>
-
-      <section class="panel" id="sharing" aria-labelledby="sharing-title">
-        <div class="content-narrow">
-          <p class="eyebrow">Public previews</p>
-          <h1 id="sharing-title">Share a saved Markdown snapshot without exposing the repo.</h1>
-          <p class="lede">
-            rRepoDocs sharing creates a public browser link for the current saved document version.
-            The receiver only sees a read-only preview, and the owner can expire or revoke links.
-          </p>
-          <div class="steps">
+        <div class="product-section" aria-labelledby="sharing-title">
+          <div class="section-heading section-heading--compact">
+            <div>
+              <p class="eyebrow">Public previews</p>
+              <h2 id="sharing-title">Share a saved Markdown snapshot without exposing the repo.</h2>
+            </div>
+            <p>
+              rRepoDocs sharing creates a public browser link for the current saved document version.
+              The receiver only sees a read-only preview, and the owner can expire or revoke links.
+            </p>
+          </div>
+          <div class="steps steps--product">
             <article>
               <span>01</span>
               <h3>Create</h3>
@@ -173,7 +167,7 @@
         </div>
       </section>
 
-      <section class="panel" id="roadmap" aria-labelledby="roadmap-title">
+      <section class="panel" data-panel-id="roadmap" aria-labelledby="roadmap-title">
         <div class="content-narrow">
           <p class="eyebrow">Next</p>
           <h1 id="roadmap-title">A simple home that can grow with each app.</h1>
@@ -204,6 +198,6 @@
       <span>Independent apps by Robert Gustavsson.</span>
     </footer>
 
-    <script src="app.js"></script>
+    <script src="app.js?v=2"></script>
   </body>
 </html>
