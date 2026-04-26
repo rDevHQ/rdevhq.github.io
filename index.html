@@ -33,6 +33,14 @@
           </svg>
           <span>rRepoDocs</span>
         </button>
+        <button class="project-nav__item" type="button" data-panel="rtimer">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M12 6v6l3.5 2" />
+            <path d="M9 2h6" />
+            <path d="M12 22a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z" />
+          </svg>
+          <span>rTimer</span>
+        </button>
         <button class="project-nav__item" type="button" data-panel="roadmap">
           <svg aria-hidden="true" viewBox="0 0 24 24">
             <path d="M5 6h14M5 12h14M5 18h14" />
@@ -51,12 +59,15 @@
             <h1 id="overview-title">Small, focused software from rDevHQ.</h1>
             <p class="lede">
               rDevHQ is where Robert Gustavsson publishes apps, experiments, and tools built for
-              practical workflows. The first public app is rRepoDocs, a GitHub-backed Markdown
-              workspace for writing and sharing repository documentation.
+              practical workflows. Current projects include rRepoDocs for GitHub-backed Markdown
+              documentation and rTimer for focused simple and interval timers.
             </p>
             <div class="hero-actions">
               <a class="button button--primary" href="#rrepodocs" data-link-panel="rrepodocs">
                 View rRepoDocs
+              </a>
+              <a class="button button--secondary" href="#rtimer" data-link-panel="rtimer">
+                View rTimer
               </a>
               <a class="button button--secondary" href="https://github.com/rdevhq" rel="noreferrer">
                 GitHub
@@ -79,6 +90,13 @@
               <div>
                 <h3>rRepoDocs</h3>
                 <p>Markdown editing, previewing, history, and public snapshot sharing for GitHub repos.</p>
+              </div>
+            </button>
+            <button class="project-card project-card--button" type="button" data-link-panel="rtimer">
+              <img src="assets/rtimer-icon.png" alt="" />
+              <div>
+                <h3>rTimer</h3>
+                <p>Calm countdowns, saved presets, and advanced interval flows for iOS and Android.</p>
               </div>
             </button>
             <div class="project-card project-card--empty" aria-label="Future rDevHQ apps">
@@ -155,6 +173,83 @@
               <span>03</span>
               <h3>Revoke</h3>
               <p>Review active public links and turn off access when the preview is no longer needed.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" data-panel-id="rtimer" aria-labelledby="rtimer-title">
+        <div class="product-layout">
+          <div class="product-copy">
+            <p class="eyebrow">Mobile app</p>
+            <h1 id="rtimer-title">rTimer makes countdowns and interval flows feel calm and deliberate.</h1>
+            <p class="lede">
+              Create simple timers or build advanced work, rest, rounds, warm-up, and cool-down
+              sequences. rTimer is evolving as a Compose Multiplatform app with shared product logic
+              and native iOS and Android hosts.
+            </p>
+            <dl class="feature-list feature-list--timer">
+              <div>
+                <dt>Simple timers</dt>
+                <dd>Set a single countdown quickly when the task only needs one clear duration.</dd>
+              </div>
+              <div>
+                <dt>Advanced intervals</dt>
+                <dd>Build repeating routines with work, rest, rounds, and optional lead-in or finish phases.</dd>
+              </div>
+              <div>
+                <dt>Preset library</dt>
+                <dd>Keep common routines ready so repeated sessions can start without rebuilding the timer.</dd>
+              </div>
+            </dl>
+            <div class="hero-actions product-actions">
+              <a class="button button--primary" href="https://github.com/rDevHQ/rTimer" rel="noreferrer">
+                View on GitHub
+              </a>
+            </div>
+          </div>
+          <div class="product-visual product-visual--timer">
+            <img src="assets/rtimer-icon.png" alt="rTimer app icon" />
+            <div class="timer-screen" aria-hidden="true">
+              <div class="timer-screen__status">
+                <span>Advanced</span>
+                <strong>07:24</strong>
+              </div>
+              <div class="timer-ring">
+                <span>04:45</span>
+              </div>
+              <div class="timer-controls">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-section" aria-labelledby="rtimer-flow-title">
+          <div class="section-heading section-heading--compact">
+            <div>
+              <p class="eyebrow">Timer flows</p>
+              <h2 id="rtimer-flow-title">From one countdown to structured routines.</h2>
+            </div>
+            <p>
+              rTimer keeps the main timer screen focused while giving advanced routines enough
+              structure for repeated work, recovery, warm-up, and cool-down sessions.
+            </p>
+          </div>
+          <div class="steps steps--product steps--timer">
+            <article>
+              <span>01</span>
+              <h3>Choose</h3>
+              <p>Start with a simple countdown or switch into an interval builder.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Tune</h3>
+              <p>Set work, rest, rounds, and optional transition phases for the session.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Run</h3>
+              <p>Follow a clear timer surface that keeps progress and primary actions visible.</p>
             </article>
           </div>
         </div>
