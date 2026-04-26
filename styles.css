@@ -39,6 +39,10 @@ a {
   font: inherit;
 }
 
+button {
+  color: inherit;
+}
+
 a {
   color: inherit;
 }
@@ -319,6 +323,10 @@ h3 {
   gap: 14px;
 }
 
+.project-strip--apps {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .project-card,
 .steps article,
 .roadmap-list div {
@@ -333,11 +341,32 @@ h3 {
   gap: 14px;
   align-items: flex-start;
   padding: 18px;
+  color: var(--ink);
+  text-align: left;
 }
 
 .project-card.is-current {
   border-color: rgba(7, 91, 220, 0.3);
   background: #fff;
+}
+
+.project-card--button {
+  cursor: pointer;
+}
+
+.project-card--button:hover {
+  border-color: rgba(7, 91, 220, 0.44);
+  transform: translateY(-1px);
+}
+
+.project-card--button:focus-visible {
+  outline: 3px solid rgba(7, 91, 220, 0.28);
+  outline-offset: 3px;
+}
+
+.project-card--empty {
+  border-style: dashed;
+  background: rgba(255, 255, 255, 0.52);
 }
 
 .project-card img,
@@ -564,6 +593,7 @@ h3 {
   .hero-grid,
   .product-layout,
   .project-strip,
+  .project-strip--apps,
   .steps {
     grid-template-columns: 1fr;
   }
